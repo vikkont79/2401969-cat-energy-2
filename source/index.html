@@ -2,16 +2,39 @@
 <html class="page" lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Название проекта</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" href="styles/styles.css">
-	<script src="scripts/index.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
-	<header class="header">Шапка</header>
-	<p>Привет, Вик!</p>
+  <header class="page-header wrapper">
+    <nav class="page-header__nav main-nav">
+      <div class="main-nav__bar" style="display: flex;">
+        <div class="main-nav__logo">
+          <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип для мобилки">
+          <img src="images/footer-logo.svg" width="101" height="18" alt="Логотип текстовый">
+        </div>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
 </body>
 
 </html>
